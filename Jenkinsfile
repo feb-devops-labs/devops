@@ -3,9 +3,7 @@
 def appname='devops'
 def env='production'
 pipeline{
-agent {
-    label devops
-    }
+agent any
    stages {
         stage('Clean Workspace') {
             steps {
