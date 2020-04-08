@@ -1,10 +1,12 @@
+#!groovy
+
+def appname='devops'
+def env='production'
 pipeline{
 agent {
     lable devops
     }
-def appname='devops'
-def env='production'
-    stages {
+   stages {
         stage('Clean Workspace') {
             steps {
                 deleteDir()
